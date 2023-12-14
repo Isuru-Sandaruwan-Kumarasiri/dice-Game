@@ -59,24 +59,35 @@ const diceContent_2=document.querySelector(".secondDice");
 
 ////diceContent.appendChild(createDice(randomDice()));
 //diceContent_2.appendChild(createDice(randomDice()));
-
+let total=0;
 
 //button oparation
 const btn=document.querySelector(".b1");
 btn.addEventListener("click",()=>{
     diceContent.innerHTML="";
     const r=randomDice();
+    total+=r;
     diceContent.appendChild(createDice(r))
-    document.getElementById("t_1").innerHTML=r;
+    document.getElementById("t_1").innerHTML=total;
     
 });
+let total_2=0;
 const btn_2=document.querySelector(".b2");
 btn_2.addEventListener("click",()=>{
     diceContent_2.innerHTML="";
     const r=randomDice();
+    total_2+=r;
     diceContent_2.appendChild(createDice(r))
-    document.getElementById("t_2").innerHTML=r;
+    document.getElementById("t_2").innerHTML=total_2;
 });
+
+document.getElementById("close-round").addEventListener("click",()=>{
+    if(total_2>total){
+        document.getElementById("winner").innerHTML="player 02 is win....!";
+    }else{
+        document.getElementById("winner").innerHTML="player 01 is win....!";
+    }
+})
 
 
 

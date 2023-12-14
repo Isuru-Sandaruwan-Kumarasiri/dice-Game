@@ -69,3 +69,17 @@ body{
     transform: translateX(calc(var(--left)*-1))translateY(calc(var(--left)*-1));
     
 }
+/* bottom button and text */
+.result{
+    position: relative;
+    bottom: -250px;
+
+}
+#close-round{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: coral;
+    color: #000;
+    font-weight: 700;
+}
