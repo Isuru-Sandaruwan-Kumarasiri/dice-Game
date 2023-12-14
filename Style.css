@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(39, 39, 225, 0.79);
+    color: #fff;
+    font-family: 'Roboto',sans-serif;
+    
+}
+.main{
+    text-align: center;
+}
+.main>h2{
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+   
+}
+.container .content{
+    margin: 20px;
+    padding: 20px;
+    border: 5px #fff solid;
+
+}
+.container .content>h3{
+    padding: 10px;
+    margin-bottom: 5px;
+}
